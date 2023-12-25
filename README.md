@@ -1,82 +1,3 @@
-<!-- vscode-markdown-toc -->
-* 1. [Java - Platform Independent (WORA - Write Once Run Anywhere)](#Java-PlatformIndependentWORA-WriteOnceRunAnywhere)
-* 2. [JDK vs JRE vs JVM](#JDKvsJREvsJVM)
-* 3. [Advantage of this model](#Advantageofthismodel)
-* 4. [JIT - Just In Time Compiler](#JIT-JustInTimeCompiler)
-* 5. [Five design goals of Java](#FivedesigngoalsofJava)
-* 6. [Compiling & Running a Java program without an IDE](#CompilingRunningaJavaprogramwithoutanIDE)
-* 7. [JShell](#JShell)
-* 8. [Disecting a Java Program](#DisectingaJavaProgram)
-* 9. [Variable declaration and assignment](#Variabledeclarationandassignment)
-* 10. [Primitive types](#Primitivetypes)
-* 11. [Literals](#Literals)
-* 12. [Strong static typing](#Strongstatictyping)
-* 13. [Type casting](#Typecasting)
-* 14. [Casting and lossy conversion](#Castingandlossyconversion)
-* 15. [Precision loss in numeric operations](#Precisionlossinnumericoperations)
-* 16. [Automatic Type Promotion](#AutomaticTypePromotion)
-* 17. [Arrays](#Arrays)
-* 18. [Multidimensional Arrays](#MultidimensionalArrays)
-* 19. [Operators](#Operators)
-* 20. [Blocks and Variable Scoping](#BlocksandVariableScoping)
-* 21. [Flow/ Control Statements](#FlowControlStatements)
-* 22. [Revisiting variable scoping](#Revisitingvariablescoping)
-* 23. [Object Oriented Programming](#ObjectOrientedProgramming)
-* 24. [Class Syntax and Object creation](#ClassSyntaxandObjectcreation)
-* 25. [Object references](#Objectreferences)
-* 26. [Things to remember](#Thingstoremember)
-* 27. [Variable Shadowing and this reference](#VariableShadowingandthisreference)
-* 28. [Constructors](#Constructors)
-* 29. [Calling a Constructor from Constructor](#CallingaConstructorfromConstructor)
-* 30. [Instance arguments and copy constructors](#Instanceargumentsandcopyconstructors)
-* 31. [Constructor Object Argument](#ConstructorObjectArgument)
-* 32. [Copy Constructor Pattern](#CopyConstructorPattern)
-* 33. [Passing objects as method arguments](#Passingobjectsasmethodarguments)
-* 34. [Packages](#Packages)
-* 35. [The Import statement](#TheImportstatement)
-* 36. [Access Modifiers](#AccessModifiers)
-* 37. [The Static keyword](#TheStatickeyword)
-* 38. [The final modifier](#Thefinalmodifier)
-* 39. [Nested Classes](#NestedClasses)
-	* 39.1. [Static inner class](#Staticinnerclass)
-	* 39.2. [Inner class](#Innerclass)
-	* 39.3. [Local class](#Localclass)
-	* 39.4. [Anonymous inner class](#Anonymousinnerclass)
-* 40. [Local classes and variable scope :](#Localclassesandvariablescope:)
-* 41. [Inheritance and Polymorphism](#InheritanceandPolymorphism)
-* 42. [Method Overriding](#MethodOverriding)
-* 43. [Inheritance Example](#InheritanceExample)
-* 44. [Encapsulation revisited](#Encapsulationrevisited)
-* 45. [Constructors calls with Inheritance](#ConstructorscallswithInheritance)
-* 46. [Abstract Class](#AbstractClass)
-* 47. [Abstract Methods](#AbstractMethods)
-* 48. [Final Keyword with Inheritance](#FinalKeywordwithInheritance)
-* 49. [Interfaces](#Interfaces)
-* 50. [Usage of Interfaces](#UsageofInterfaces)
-* 51. [Default Methods in Interfaces](#DefaultMethodsinInterfaces)
-* 52. [Interfaces Summary](#InterfacesSummary)
-* 53. [Polymorphism](#Polymorphism)
-* 54. [Polymorphism with interfaces](#Polymorphismwithinterfaces)
-* 55. [Casting](#Casting)
-* 56. [Is-A relationship](#Is-Arelationship)
-* 57. [The Object class](#TheObjectclass)
-* 58. [The toString method](#ThetoStringmethod)
-* 59. [The Equals method](#TheEqualsmethod)
-* 60. [Exception Handling](#ExceptionHandling)
-* 61. [Try Catch Block](#TryCatchBlock)
-* 62. [Execution flow in a Try-Catch block](#ExecutionflowinaTry-Catchblock)
-* 63. [Throw and the call stack](#Throwandthecallstack)
-* 64. [Exception Types and Hierarchies](#ExceptionTypesandHierarchies)
-* 65. [Custom Exception Classes](#CustomExceptionClasses)
-* 66. [Throwable and Inherited Methods](#ThrowableandInheritedMethods)
-* 67. [Exception Handling Best Practices](#ExceptionHandlingBestPractices)
-
-<!-- vscode-markdown-toc-config
-	numbering=true
-	autoSave=true
-	/vscode-markdown-toc-config -->
-<!-- /vscode-markdown-toc -->
-
 ![img.png](slides/img.png)
 <br></br>
 
@@ -86,7 +7,7 @@
 ![img.png](slides/img2.png)
 <br></br>
 
-##  1. <a name='Java-PlatformIndependentWORA-WriteOnceRunAnywhere'></a>Java - Platform Independent (WORA - Write Once Run Anywhere)
+## Java - Platform Independent (WORA - Write Once Run Anywhere)
 ![img.png](slides/img_1.png)
 <br></br>
 
@@ -97,7 +18,7 @@
 <br></br>
 
 
-##  2. <a name='JDKvsJREvsJVM'></a>JDK vs JRE vs JVM
+## JDK vs JRE vs JVM
 ![img.png](slides/img_4.png)
 <br></br>
 
@@ -111,31 +32,31 @@
 <br></br>
 
 
-##  3. <a name='Advantageofthismodel'></a>Advantage of this model 
+## Advantage of this model 
 - WORA, once you got the byte code, you can run it on any machine where the JRE/JVM is installed.
 - Security, JVM acts as a Sandbox. JVM will not let you run anything
 
-##  4. <a name='JIT-JustInTimeCompiler'></a>JIT - Just In Time Compiler
+## JIT - Just In Time Compiler
 ![img.png](slides/img_8.png)
 <br></br>
 
 
-##  5. <a name='FivedesigngoalsofJava'></a>Five design goals of Java
+## Five design goals of Java
 ![img.png](slides/img_9.png)
 <br></br>
 
 
-##  6. <a name='CompilingRunningaJavaprogramwithoutanIDE'></a>Compiling & Running a Java program without an IDE 
+## Compiling & Running a Java program without an IDE 
 ![img.png](slides/img_10.png)
 <br></br>
 
 
-##  7. <a name='JShell'></a>JShell
+## JShell
 ![img.png](slides/img_11.png)
 <br></br>
 
 
-##  8. <a name='DisectingaJavaProgram'></a>Disecting a Java Program
+## Disecting a Java Program
 ![img.png](slides/img_12.png)
 <br></br>
 
@@ -143,7 +64,7 @@
 <br></br>
 
 
-##  9. <a name='Variabledeclarationandassignment'></a>Variable declaration and assignment
+## Variable declaration and assignment
 ![img.png](slides/img_14.png)
 <br></br>
 
@@ -154,7 +75,7 @@
 <br></br>
 
 
-##  10. <a name='Primitivetypes'></a>Primitive types  
+## Primitive types  
 ![img.png](slides/img_17.png)
 <br></br>
 
@@ -162,7 +83,7 @@
 <br></br>
 
 
-##  11. <a name='Literals'></a>Literals 
+## Literals 
 A way to specify value inline 
 <br></br>
 ![img.png](slides/img_19.png)
@@ -181,7 +102,7 @@ A way to specify value inline
 <br></br>
 
 
-##  12. <a name='Strongstatictyping'></a>Strong static typing
+## Strong static typing
 - Java is a strongly typed language
 ![img.png](slides/img_24.png)
 <br></br>
@@ -197,7 +118,7 @@ A way to specify value inline
 <br></br>
 
 
-##  13. <a name='Typecasting'></a>Type casting
+## Type casting
 - Conversion in number types
 ![img.png](slides/img_28.png)
 <br></br>
@@ -218,18 +139,18 @@ A way to specify value inline
 <br></br>
 
 
-##  14. <a name='Castingandlossyconversion'></a>Casting and lossy conversion
+## Casting and lossy conversion
 ![img.png](slides/img_34.png)
 <br></br>
 
 - Casting object references(Covered later)
 
-##  15. <a name='Precisionlossinnumericoperations'></a>Precision loss in numeric operations
+## Precision loss in numeric operations
 ![img.png](slides/img_35.png)
 <br></br>
 
 
-##  16. <a name='AutomaticTypePromotion'></a>Automatic Type Promotion
+## Automatic Type Promotion
 ![img.png](slides/img_36.png)
 <br></br>
 
@@ -242,7 +163,7 @@ A way to specify value inline
  - In an expression, if one long is present, every value will be converted to long
  - In an expression, if one double is present, every value will be converted to double
 
-##  17. <a name='Arrays'></a>Arrays
+## Arrays
 ![img.png](slides/img_38.png)
 <br></br>
 
@@ -259,7 +180,7 @@ A way to specify value inline
 <br></br>
 
 
-##  18. <a name='MultidimensionalArrays'></a>Multidimensional Arrays
+## Multidimensional Arrays
 ![img.png](slides/img_43.png)
 <br></br>
 
@@ -267,7 +188,7 @@ A way to specify value inline
 <br></br>
 
 
-##  19. <a name='Operators'></a>Operators
+## Operators
 ![img.png](slides/img_45.png)
 <br></br>
 
@@ -293,7 +214,7 @@ A way to specify value inline
 <br></br>
 
 
-##  20. <a name='BlocksandVariableScoping'></a>Blocks and Variable Scoping
+## Blocks and Variable Scoping
 - Curly braces forms a **Block**
 - Local variables -> **Local** to scope  
 
@@ -304,7 +225,7 @@ A way to specify value inline
 <br></br>
 
 
-##  21. <a name='FlowControlStatements'></a>Flow/ Control Statements
+## Flow/ Control Statements
 ![img.png](slides/img_55.png)
 <br></br>
 
@@ -363,7 +284,7 @@ A way to specify value inline
 <br></br>
 
 
-##  22. <a name='Revisitingvariablescoping'></a>Revisiting variable scoping 
+## Revisiting variable scoping 
 ![img.png](slides/img_74.png)
 <br></br>
 
@@ -374,7 +295,7 @@ A way to specify value inline
 <br></br>
 
 
-##  23. <a name='ObjectOrientedProgramming'></a>Object Oriented Programming
+## Object Oriented Programming
  - Models **"things"** in the real or business world
  - State and Behavior
  - Objects - Referred to as instances or class instances
@@ -388,7 +309,7 @@ A way to specify value inline
 <br></br>
 
 
-##  24. <a name='ClassSyntaxandObjectcreation'></a>Class Syntax and Object creation
+## Class Syntax and Object creation
 ![img.png](slides/img_80.png)
 <br></br>
 
@@ -405,7 +326,7 @@ A way to specify value inline
 <br></br>
 
 
-##  25. <a name='Objectreferences'></a>Object references
+## Object references
 ![img.png](slides/img_85.png)
 <br></br>
 
@@ -418,7 +339,7 @@ A way to specify value inline
 <br></br>
 
 
-##  26. <a name='Thingstoremember'></a>Things to remember
+## Things to remember
 ![img.png](slides/img_88.png)
 <br></br>
 
@@ -426,7 +347,7 @@ A way to specify value inline
 <br></br>
 
 
-##  27. <a name='VariableShadowingandthisreference'></a>Variable Shadowing and this reference
+## Variable Shadowing and this reference
 ![img.png](slides/img_90.png)
 <br></br>
 
@@ -436,7 +357,7 @@ A way to specify value inline
 <br></br>
 
 
-##  28. <a name='Constructors'></a>Constructors
+## Constructors
 ![img.png](slides/img_92.png)
 <br></br>
 
@@ -450,12 +371,12 @@ A way to specify value inline
 <br></br>
 
 
-##  29. <a name='CallingaConstructorfromConstructor'></a>Calling a Constructor from Constructor
+## Calling a Constructor from Constructor
 ![img.png](slides/img_96.png)
 <br></br>
 
 
-##  30. <a name='Instanceargumentsandcopyconstructors'></a>Instance arguments and copy constructors
+## Instance arguments and copy constructors
 ![img.png](slides/img_97.png)
 <br></br>
 
@@ -466,12 +387,12 @@ A way to specify value inline
 
  - Method parameters/arguments can be reference variable too. 
 
-##  31. <a name='ConstructorObjectArgument'></a>Constructor Object Argument
+## Constructor Object Argument
 ![img.png](slides/img_99.png)
 <br></br>
 
 
-##  32. <a name='CopyConstructorPattern'></a>Copy Constructor Pattern
+## Copy Constructor Pattern
 ![img.png](slides/img_100.png)
 <br></br>
 
@@ -479,7 +400,7 @@ A way to specify value inline
  - Copy constructor is just one application of the constructor
  - For instance, you could pass the reference variable of different class and use one data member.
 
-##  33. <a name='Passingobjectsasmethodarguments'></a>Passing objects as method arguments
+## Passing objects as method arguments
 ![img.png](slides/img_101.png)
 <br></br>
 
@@ -495,7 +416,7 @@ A way to specify value inline
 <br></br>
 
 
-##  34. <a name='Packages'></a>Packages
+## Packages
 ![img.png](slides/img_105.png)
 <br></br>
 
@@ -508,7 +429,7 @@ A way to specify value inline
 <br></br>
 
 
-##  35. <a name='TheImportstatement'></a>The Import statement
+## The Import statement
  - Import required to use a class from a different package. 
  - Or else you have to use Fully Qualified Name(packagename.ClassName)
 ![img.png](slides/img_108.png)
@@ -518,7 +439,7 @@ A way to specify value inline
 <br></br>
 
 
-##  36. <a name='AccessModifiers'></a>Access Modifiers
+## Access Modifiers
  - Encapsulate and restrict access to member variables and methods in Classes
  - What are the access modifiers in Java?
 ![img.png](slides/img_110.png)
@@ -540,7 +461,7 @@ A way to specify value inline
 <br></br>
 
 
-##  37. <a name='TheStatickeyword'></a>The Static keyword
+## The Static keyword
  - When you need to define a class member as independent from any object instance
  - Make a class member associate with the class, not instance.
 
@@ -566,7 +487,7 @@ A way to specify value inline
 <br></br>
 
 
-##  38. <a name='Thefinalmodifier'></a>The final modifier
+## The final modifier
 
 ![Pasted image 20231221133543](slides/Pasted%20image%2020231221133543.png)
 <br></br>
@@ -592,26 +513,26 @@ If we didn't initialize i variable, we can assign once.
 <br></br>
 
 
-##  39. <a name='NestedClasses'></a>Nested Classes 
+## Nested Classes 
 
-###  39.1. <a name='Staticinnerclass'></a>Static inner class
+### Static inner class
 
 ![Pasted image 20231221134345](slides/Pasted%20image%2020231221134345.png)
 <br></br>
 
-###  39.2. <a name='Innerclass'></a>Inner class 
+### Inner class 
 ![Pasted image 20231221134417](slides/Pasted%20image%2020231221134417.png)
 <br></br>
 
-###  39.3. <a name='Localclass'></a>Local class 
+### Local class 
 ![Pasted image 20231221134440](slides/Pasted%20image%2020231221134440.png)
 <br></br>
 
-###  39.4. <a name='Anonymousinnerclass'></a>Anonymous inner class 
+### Anonymous inner class 
 ![Pasted image 20231221134511](slides/Pasted%20image%2020231221134511.png)
 <br></br>
 
-##  40. <a name='Localclassesandvariablescope:'></a>Local classes and variable scope : 
+## Local classes and variable scope : 
 ![Pasted image 20231221135127](slides/Pasted%20image%2020231221135127.png)
 <br></br>
 
@@ -623,7 +544,7 @@ If we didn't initialize i variable, we can assign once.
 ![Pasted image 20231221135207](slides/Pasted%20image%2020231221135207.png)
 <br></br>
 
-##  41. <a name='InheritanceandPolymorphism'></a>Inheritance and Polymorphism 
+## Inheritance and Polymorphism 
 
 ![Pasted image 20231221135532](slides/Pasted%20image%2020231221135532.png)
 <br></br>
@@ -667,7 +588,7 @@ Why Java doesn't support Multiple Inheritance - Then it should handle so much co
 <br></br>
 
 
-##  42. <a name='MethodOverriding'></a>Method Overriding
+## Method Overriding
 ![Pasted image 20231221140701](slides/Pasted%20image%2020231221140701.png)
 <br></br>
 
@@ -686,7 +607,7 @@ However, you can make it stronger. Protected -> Public is valid.
 Conveying our intent to the compiler! 
 
 
-##  43. <a name='InheritanceExample'></a>Inheritance Example
+## Inheritance Example
 
 ![Pasted image 20231221141028](slides/Pasted%20image%2020231221141028.png)
 <br></br>
@@ -696,7 +617,7 @@ Conveying our intent to the compiler!
 ![Pasted image 20231221141056](slides/Pasted%20image%2020231221141056.png)
 <br></br>
 
-##  44. <a name='Encapsulationrevisited'></a>Encapsulation revisited
+## Encapsulation revisited
 
 ![Pasted image 20231221141309](slides/Pasted%20image%2020231221141309.png)
 <br></br>
@@ -709,7 +630,7 @@ If run method uses seats, it will work in sub class as well.
 <br></br>
 
 
-##  45. <a name='ConstructorscallswithInheritance'></a>Constructors calls with Inheritance
+## Constructors calls with Inheritance
 
 ![Pasted image 20231221141451](slides/Pasted%20image%2020231221141451.png)
 <br></br>
@@ -739,7 +660,7 @@ B's constructor called 5
 <br></br>
 
 
-##  46. <a name='AbstractClass'></a>Abstract Class
+## Abstract Class
 
 ![](slides/Pasted%20image%2020231221212310.png)
 
@@ -765,7 +686,7 @@ B's constructor called 5
 
 <br></br>
 
-##  47. <a name='AbstractMethods'></a>Abstract Methods
+## Abstract Methods
 
 
 ![](slides/Pasted%20image%2020231221212651.png)
@@ -778,7 +699,7 @@ B's constructor called 5
 <br></br>
 
 
-##  48. <a name='FinalKeywordwithInheritance'></a>Final Keyword with Inheritance 
+## Final Keyword with Inheritance 
 
 
 ![](slides/Pasted%20image%2020231221212815.png)
@@ -790,7 +711,7 @@ B's constructor called 5
 <br></br>
 
 
-##  49. <a name='Interfaces'></a>Interfaces
+## Interfaces
 
 ![](slides/Pasted%20image%2020231221213128.png)
 
@@ -804,7 +725,7 @@ B's constructor called 5
 
 <br></br>
 
-##  50. <a name='UsageofInterfaces'></a>Usage of Interfaces
+## Usage of Interfaces
 
 ![](slides/Pasted%20image%2020231221213329.png)
 
@@ -823,7 +744,7 @@ B's constructor called 5
 
 <br></br>
 
-##  51. <a name='DefaultMethodsinInterfaces'></a>Default Methods in Interfaces 
+## Default Methods in Interfaces 
 
 ![](slides/Pasted%20image%2020231221213835.png)
 
@@ -841,7 +762,7 @@ B's constructor called 5
 
 <br></br>
 
-##  52. <a name='InterfacesSummary'></a>Interfaces Summary 
+## Interfaces Summary 
 
 ![](slides/Pasted%20image%2020231221214410.png)
 
@@ -853,7 +774,7 @@ B's constructor called 5
 <br></br>
 
 
-##  53. <a name='Polymorphism'></a>Polymorphism 
+## Polymorphism 
 Means Many Forms
 
 ![](slides/Pasted%20image%2020231221215223.png)
@@ -899,7 +820,7 @@ You can't call Lion only methods, when you assign lion object to animal.
 Lion's method will be called. 
 
 
-##  54. <a name='Polymorphismwithinterfaces'></a>Polymorphism with interfaces 
+## Polymorphism with interfaces 
 
 ![](slides/Pasted%20image%2020231221220006.png)
 
@@ -911,7 +832,7 @@ Lion's method will be called.
 
 Now using car, you can call only drive method, no matter how many methods present in SportsCar. 
 
-##  55. <a name='Casting'></a>Casting 
+## Casting 
 
 ![](slides/Pasted%20image%2020231222110818.png)
 
@@ -929,7 +850,7 @@ Now using car, you can call only drive method, no matter how many methods presen
 
 
 
-##  56. <a name='Is-Arelationship'></a>Is-A relationship 
+## Is-A relationship 
 
 ![](slides/Pasted%20image%2020231222111648.png)
 
@@ -951,7 +872,7 @@ Lion is a Animal
 
 SportsCar is a Drivable car
 
-##  57. <a name='TheObjectclass'></a>The Object class
+## The Object class
 
 ![](slides/Pasted%20image%2020231222112034.png)
 
@@ -972,7 +893,7 @@ SportsCar is a Drivable car
 
 
 
-##  58. <a name='ThetoStringmethod'></a>The toString method 
+## The toString method 
 
 ![](slides/Pasted%20image%2020231222112419.png)
 
@@ -988,7 +909,7 @@ SportsCar is a Drivable car
 <br></br>
 
 
-##  59. <a name='TheEqualsmethod'></a>The Equals method 
+## The Equals method 
 
 ![](slides/Pasted%20image%2020231222113034.png)
 
@@ -1019,7 +940,7 @@ Still you can't use == , but rather you can use .equals method.
 
 
 
-##  60. <a name='ExceptionHandling'></a>Exception Handling 
+## Exception Handling 
 
 ![](slides/Pasted%20image%2020231222113751.png)
 
@@ -1062,7 +983,7 @@ Still you can't use == , but rather you can use .equals method.
 <br></br>
 
 
-##  61. <a name='TryCatchBlock'></a>Try Catch Block
+## Try Catch Block
 
 ![](slides/Pasted%20image%2020231222114327.png)
 
@@ -1074,7 +995,7 @@ Still you can't use == , but rather you can use .equals method.
 
 
 
-##  62. <a name='ExecutionflowinaTry-Catchblock'></a>Execution flow in a Try-Catch block 
+## Execution flow in a Try-Catch block 
 
 
 ![](slides/Pasted%20image%2020231222114650.png)
@@ -1103,7 +1024,7 @@ Still you can't use == , but rather you can use .equals method.
 <br></br>
 
 
-##  63. <a name='Throwandthecallstack'></a>Throw and the call stack 
+## Throw and the call stack 
 
 ![](slides/Pasted%20image%2020231222115310.png)
 
@@ -1126,7 +1047,7 @@ Still you can't use == , but rather you can use .equals method.
 <br></br>
 
 
-##  64. <a name='ExceptionTypesandHierarchies'></a>Exception Types and Hierarchies
+## Exception Types and Hierarchies
 
 ![](slides/Pasted%20image%2020231222115938.png)
 
@@ -1137,7 +1058,7 @@ Error -> Unchecked exception.
 Unchecked exception need not be surrounded by try catch block. 
 But Exception needs to be surrounded by try catch block. 
 
-##  65. <a name='CustomExceptionClasses'></a>Custom Exception Classes 
+## Custom Exception Classes 
 
 ![](slides/Pasted%20image%2020231222120528.png)
 
@@ -1162,7 +1083,7 @@ But Exception needs to be surrounded by try catch block.
 <br></br>
 
 
-##  66. <a name='ThrowableandInheritedMethods'></a>Throwable and Inherited Methods 
+## Throwable and Inherited Methods 
 
 ![](slides/Pasted%20image%2020231222120853.png)
 
@@ -1179,7 +1100,7 @@ But Exception needs to be surrounded by try catch block.
 <br></br>
 
 
-##  67. <a name='ExceptionHandlingBestPractices'></a>Exception Handling Best Practices 
+## Exception Handling Best Practices 
 
 ![](slides/Pasted%20image%2020231222121443.png)
 
